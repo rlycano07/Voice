@@ -20,11 +20,11 @@ class AppWorks extends React.Component {
 
   render() {
     return (
-      <div id="works" className="block worksBlock">
+      <div id="video" className="block worksBlock">
         <div className="container-fluid">
           <div className="titleHolder">
             <h2>Who is to blame? </h2>
-            <p1>Israel and Palestine Conlfict</p1>
+            <div>Israel and Palestine Conlfict</div>
           </div>
           <div className="contentHolder">
             <Button size="large" onClick={this.showModal}><i className="fas fa-play"></i></Button>

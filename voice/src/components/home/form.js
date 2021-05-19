@@ -5,7 +5,7 @@ const { TextArea } = Input;
 
 function AppForm() {
   return (
-    <div id="contact" className="block contactBlock">
+    <div id="create" className="block contactBlock">
       <div className="container-fluid">
         <div className="titleHolder">
           <h2>Create a new Discussion</h2>
