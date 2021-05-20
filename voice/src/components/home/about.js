@@ -7,19 +7,19 @@ const items = [
     key: '1',
     icon: <i className="fas fa-chart-pie"></i>,
     title: 'Public Polls',
-    content: 'cu nostro dissentias consectetuer mel. Ut admodum conceptam mei, cu eam tation fabulas abhorreant. His ex mandamus.',
+    content: 'On paper, it sounds so simple; in reality it is much more difficult to determine. The most common method for ascertaining and consolidating public opinion has been through the widespread use of polls. Their popularity has steadily increased over the years. ',
   },
   {
     key: '2',
     icon: <i className="fas fa-desktop"></i>,
     title: 'Online Debates',
-    content: 'cu nostro dissentias consectetuer mel. Ut admodum conceptam mei, cu eam tation fabulas abhorreant. His ex mandamus.',
+    content: 'Created by speakers and debaters long before today, the art of Speech and Debate has taken hold upon the young generation. Before the very first debate, the nervous and shivered fear pops out the outcome.',
   },
   {
     key: '3',
     icon: <i className="fas fa-database"></i>,
     title: 'Library of Ideas',
-    content: 'cu nostro dissentias consectetuer mel. Ut admodum conceptam mei, cu eam tation fabulas abhorreant. His ex mandamus.',
+    content: 'The collection contains on-line and print materials on all subjects, but focuses on those subjects that support the research needs of our users. Some of these sources are encyclopedias, dictionaries, handbooks, glossaries, directories, and atlases.',
   },
 ]
 
@@ -29,10 +29,10 @@ function AppAbout() {
       <div className="container-fluid">
         <div className="titleHolder">
           <h2>Explore</h2>
-          <p>dolor sit amet, consectetur adipisicing elit</p>
+          <p>Learn more on what intrests you</p>
         </div>
         <div className="contentHolder">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit necessitatibus officiis repudiandae est deserunt delectus dolorem iure porro distinctio fuga, nostrum doloremque. Facilis porro in laborum dolor amet ratione hic? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam aut a porro, adipisci quidem sint enim pariatur ducimus, saepe voluptatibus inventore commodi! Quis, explicabo molestias libero tenetur temporibus perspiciatis deserunt.</p>
+          <p>Knowledge about the present world is never limited. However, we are glad that you have a chance to explore a vast area of careers in Voice.</p>
         </div>
         <Row gutter={[16, 16]}>   
           {items.map(item => {

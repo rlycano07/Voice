@@ -17,8 +17,8 @@ function AppHeader() {
                         <Link href="#video" title="Videos" />
                         <Link href="#feature" title="Articles" />
                         <Link href="#about" title="Polls" />
-                        <Link href="#FAQ" title="FAQ" />
-                        <Link href="#account" title="Account" />
+                        <Link href="#create" title="FAQ" />
+                        <Link href="#create" title="Account" />
                 </Anchor>
             </div>
         </div>

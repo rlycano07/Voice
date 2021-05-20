@@ -65,7 +65,7 @@ function AppForm() {
                 { validator:(_, value) => value ? Promise.resolve() : Promise.reject('Should accept agreement') },
               ]}
             >
-              <Checkbox>I agree with terms and conditions.</Checkbox>
+              <Checkbox >I agree with terms and conditions.</Checkbox>
             </Form.Item>
           </Form.Item>
           <Form.Item>
