@@ -1,21 +1,53 @@
-import React from 'react';
-
-import { Form, Input, Button, Checkbox } from 'antd';
-const { TextArea } = Input;
+import React, {useState} from 'react';
+import '/Users/r.lycano07/GitHub_r.lycano07/Voice/voice/src/App.css';
 
 function AppForm() {
+  const [values, setValues] = useState({
+    fullname: "",
+    email: "",
+    title: "",
+    subject: "",
+    background: "",
+  })
+
+  const handleFullNameInputChange = (event) => {
+    setValues({...values, fullName: event.target.value})
+  }
+
+  const handleEmailInputChange = (event) => {
+    setValues({...values, email: event.target.value})
+  }
+  const handleTitleInputChange = (event) => {
+    setValues({...values, title: event.target.value})
+  }
+  const handleSubjectInputChange = (event) => {
+    setValues({...values, subject: event.target.value})
+  }
+  const handleBackgroundInputChange = (event) => {
+    setValues({...values, background: event.target.value})
+  }
+
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(values.fullName, values.title, values.subject, values.background);
+  }
+
   return (
     <div id="create" className="block contactBlock">
       <div className="container-fluid">
         <div className="titleHolder">
           <h2>Create a new Discussion</h2>
         </div>
-        <Form
+        <form
+          onSubmit={handleSubmit}
           name="normal_login"
           className="login-form"
           initialValues={{ remember: true }}
         >
-          <Form.Item
+          <input
+            onChange={handleFullNameInputChange}
+            value={values.firstName}
             name="fullname"
             rules={[
               { 
@@ -23,10 +55,11 @@ function AppForm() {
                 message: 'Please enter your full name!' 
               }]
             }
-          >
-            <Input placeholder="Full Name" />
-          </Form.Item>
-          <Form.Item
+            placeholder="Full Name" 
+          />
+          <input
+            onChange={handleEmailInputChange}
+            value={values.email}
             name="email"
             rules={[
               {
@@ -38,42 +71,30 @@ function AppForm() {
                 message: 'Please input your E-mail!',
               },
             ]}
-          >
-            <Input placeholder="Email Address"/>
-          </Form.Item>
-          <Form.Item
-            name="Ttitle"
-          >
-            <Input placeholder="Title" />
-          </Form.Item>
-          <Form.Item
+            placeholder="Email Address"
+          />
+          <input
+            onChange={handleTitleInputChange}
+            alue={values.title}
+            name="title"
+            placeholder="Title" 
+          />
+          <input
+            onChange={handleSubjectInputChange}
+            value={values.subject}
             name="subject"
-          >
-            <Input placeholder="Subject" />
-          </Form.Item>
-          <Form.Item
-            name="Background"
-          >
-            <TextArea placeholder="Background" />
-          </Form.Item>
-          <Form.Item>
-            <Form.Item 
-              name="remember" 
-              valuePropName="checked"
-              noStyle
-              rules={[
-                { validator:(_, value) => value ? Promise.resolve() : Promise.reject('Should accept agreement') },
-              ]}
-            >
-              <Checkbox >I agree with terms and conditions.</Checkbox>
-            </Form.Item>
-          </Form.Item>
-          <Form.Item>
-            <Button type="primary" htmlType="submit" className="login-form-button">
+            placeholder="Subject" 
+          />
+          <input
+            onChange={handleBackgroundInputChange}
+            value={values.background}
+            name="background"
+            placeholder="Background" 
+          />
+          <button type="submit" className="login-form-button">
               Submit
-            </Button>
-          </Form.Item>
-        </Form>
+          </button>
+        </form>
       </div>
     </div>  
   );

@@ -32,7 +32,7 @@ function AppAbout() {
           <p>Learn more on what intrests you</p>
         </div>
         <div className="contentHolder">
-          <p>Knowledge about the present world is never limited. However, we are glad that you have a chance to explore a vast area of careers in Voice.</p>
+          <p>Knowledge about the present world is never limited. However, we are glad that you have a chance to explore a vast area of concepts on Voice.</p>
         </div>
         <Row gutter={[16, 16]}>   
           {items.map(item => {

@@ -11,3 +11,89 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.post{
+  position: relative;
+  border: 1px solid;
+}
+
+.count{
+  position: absolute;
+  right: 30px;
+}
+
+.like{
+  background-color:rgb(175, 238, 175);
+  border:rgb(175, 238, 175);
+  border-style: inset;
+}
+
+.dislike{
+  background-color:rgb(208, 142, 130);
+  border:rgb(208, 142, 130);
+  border-style: inset;
+}
+
+
+.like:hover{
+  border:rgb(255, 255, 255);
+  border-style: inset;
+}
+
+.dislike:hover{
+  border:rgb(255, 255, 255);
+  border-style: inset;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #1684d8;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formtitle{
+  text-align: center;
+  font-size: 30px;
+}
+
+input[type=submit]:hover {
+  background-color: #55a9c7;
+}
+
+.formdiv {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.addedpost {
+  border-radius: 20px;
+  padding: 20px;
+  border-style: inset;
+}
+
+.addedpost:hover {
+  border-radius: 20px;
+  padding: 20px;
+  border-style: outset;
+}
+
+.posttitle{
+  font-size: 30px;
+}
