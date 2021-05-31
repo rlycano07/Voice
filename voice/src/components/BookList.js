@@ -6,7 +6,7 @@ const BookList = () => {
   
   const { books } = useContext(BookContext);
   return books.length ? (
-    <div id="posts"className="formdiv">
+    <div id="posts" className="formdiv">
       <div >
         {books.map(book => {
           return ( <BookDetails book={book} key={book.id} /> );

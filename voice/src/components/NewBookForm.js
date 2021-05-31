@@ -18,18 +18,18 @@ const NewBookForm = () => {
   }
 
   return (
-      <div className="formdiv">
+      <div id ="create" className="formdiv">
         <div className='formtitle'>
-          Add posts
+          Create a new Discussion.
         </div>
       <form onSubmit={handleSubmit}>
-        Share new posts on the Voice:
+        
         <input type="text" placeholder="Title" value={title}
           onChange={(e) => setTitle(e.target.value)} required />
         <input type="text" placeholder="Subject" value={subject}
           onChange={(e) => setSubject(e.target.value)} required ></input> 
-        <input type="text" placeholder="Describe your topic" value={describe}
-          onChange={(e) => setDescribe(e.target.value)} required></input>
+        <textarea className="textarea" placeholder="Describe your topic" value={describe}
+          onChange={(e) => setDescribe(e.target.value)} required></textarea>
         <input type="text" placeholder="Full Name" value={author}
           onChange={(e) => setAuthor(e.target.value)} required />
         <input type="submit" />
